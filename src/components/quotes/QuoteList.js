@@ -26,7 +26,7 @@ const QuoteList = (props) => {
   // console.log(queryFarams); 
 
   const changeSortingHandler = ( ) => {
-    history.push('/quotes?sort=' + (isSortingAscending ? 'desc' : 'asc'));
+    history.push(`${location.pathname}?sort=${(isSortingAscending ? 'desc' : 'asc')}`);
   }
   return (
     <Fragment>
